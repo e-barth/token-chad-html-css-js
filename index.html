@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    #test-container {
+      background: #666;
+      width: 100vw;
+      height: 100vh;
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="test-container"> <!-- Container teste -->
+
+
+  <script id="token" type="text/html">
+    <div id="token-body">
+    <style>
+      * {
+        text-decoration: none;
+        box-sizing: border-box;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+      }
+      .token-container {
+        width: 450px;
+        height: 200px;
+        position: absolute;
+        top: 90px;
+        right: 15px;
+      }
+      .token-img {
+        width: 180px;
+        height: 180px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 3;
+        background: #ec8600;
+        border-radius: 50%;
+        border: 4px solid #ec8600;
+      }
+      .token-img img {
+        width: 180px;
+        height: 180px;
+      }
+      .token-img:hover {
+        transform: scale(1.02);
+      }
+      .token-img:hover img {
+        opacity: .6;
+      }
+      .token-info {
+        position: absolute;
+        border-radius: 3px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 15px 0 15px 20px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      .token-info.name {
+        width: 338px;
+        height: 100px;
+        top: 30px;
+        right: 100px;
+        z-index: 2;
+        background: #fff;
+        color: #402210;
+      }
+      p {
+        margin: 6px 0 0 16px;
+      }
+      .token-info.phone {
+        width: 270px;
+        height: 55px;
+        right: 90px;
+        bottom: 15px;
+        z-index: 1;
+        background: #ec8600;
+        color: #fff;
+        letter-spacing: 1.5px;
+      }
+    </style>
+    <div class="token-container">
+      <div class="token-img">
+        <a href="https://www.martinrealtymichiana.com/about/">
+          <img src="chad-martin-token-01.jpg" alt="chad-martin"> <!-- https://u.realgeeks.media/sunriserealtyhomes/chad-martin-token-01.jpg -->
+        </a>
+      </div>
+      <div class="token-info name">
+        <h2>Chad Martin</h2>
+        <p>RB16000735 (IN)</p>
+      </div>
+      <div class="token-info phone">
+        <h3>574-202-2848</h3>
+      </div>
+    </div>
+  </div>
+  </script>
+
+  <div id="target-div"></div>
+
+  <script type="text/javascript">
+  var div = document.createElement('div');
+  div.setAttribute('class', 'someClass');
+  div.innerHTML = document.getElementById('token').innerHTML;
+  document.getElementById('target-div').appendChild(div);
+  </script>
+
+
+  </div> <!-- Container teste -->
+
+</body>
+</html>
